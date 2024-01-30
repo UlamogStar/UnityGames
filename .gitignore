@@ -72,3 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 /Library/Artifacts/
+
+3D Game Test (2)/Library/PackageCache/
+
+3D Game Test (2)/Library/Artifacts/
