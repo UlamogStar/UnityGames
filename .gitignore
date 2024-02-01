@@ -130,3 +130,15 @@ crashlytics-build.properties
 3D Game Test (1)/Library/Artifacts/
 
 3D Game Test (1)/Library/Bee/artifacts/
+
+ColorMatchGame/Library/Artifacts/
+
+ColorMatchGame/Library/BurstCache/
+
+ColorMatchGame/Library/Bee/
+
+ColorMatchGame/Library/PackageCache/com.unity.2d.animation\@9.0.4/
+
+ColorMatchGame/Library/PackageCache/
+
+ColorMatchGame/Temp/Burst/

@@ -18,10 +18,14 @@ public class MonoEventsBehavior : MonoBehaviour
       startEvent.Invoke();
    }
 
+   private void OnEnable()
+   {
+      startEvent.Invoke();
+   }
+
    private void OnDisable()
    {
       disableEvent.Invoke();
    }
-   
-    
+
 }
