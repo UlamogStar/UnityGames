@@ -1,3 +1,6 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.hda filter=lfs diff=lfs merge=lfs -text
 *.sbsar filter=lfs diff=lfs merge=lfs -text
+*.shader filter=lfs diff=lfs merge=lfs -text
+*.meta filter=lfs diff=lfs merge=lfs -text
+ColorMatchGame/Assets/TextMesh[[:space:]]Pro/Shaders/* filter=lfs diff=lfs merge=lfs -text

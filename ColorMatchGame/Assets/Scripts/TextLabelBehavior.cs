@@ -2,33 +2,44 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro; 
+
 [RequireComponent(typeof(Text))]
 [RequireComponent(typeof(TMPro.TextMeshProUGUI))] 
 
 public class TextLabelBehavior : MonoBehaviour
 {
-    public Text label;
-    public TMPro.TextMeshProUGUI tmpLabel; 
-    public FloatData dataObj;
-    public BoolData boolData;
-    public IntData intData;  
-
+    private Text label;
+    private TMPro.TextMeshProUGUI tmpLabel; 
+   
+    public UnityEngine.Events.UnityEvent startEvent;
     private void Start()
     {
         label = GetComponent<Text>();
         tmpLabel = GetComponent<TMPro.TextMeshProUGUI>(); 
-        UpdateLabel();
+       
+        startEvent.Invoke();
     }
    
-    public void UpdateLabel()
+    public void UpdateLabel(FloatData obj)
+    {
+       if (label != null)
+       {
+           label.text = obj.value.ToString(CultureInfo.InvariantCulture);
+       }
+       else
+       {
+           tmpLabel.text = obj.value.ToString(CultureInfo.InvariantCulture); 
+       }
+    }
+    public void UpdateLabel(IntData obj)
     {
         if (label != null)
         {
-            label.text = dataObj.value.ToString();
+            label.text = obj.value.ToString(CultureInfo.InvariantCulture);
         }
-        else if (tmpLabel != null)
+        else
         {
-            tmpLabel.text = dataObj.value.ToString();
+            tmpLabel.text = obj.value.ToString(CultureInfo.InvariantCulture); 
         }
     }
 }
