@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class MatchBehavior : MonoBehaviour
 {
    public ID idObj;
-   public UnityEvent matchEvent, noMatchEvent;
+   public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
 
    private void OnTriggerEnter(Collider other)
    {  
@@ -21,7 +21,7 @@ public class MatchBehavior : MonoBehaviour
             else
             {
                 Debug.Log("No Match");
-                noMatchEvent.Invoke();
+                noMatchDelayedEvent.Invoke();
             }
    }
 }
