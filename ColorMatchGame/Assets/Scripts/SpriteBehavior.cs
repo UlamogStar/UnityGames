@@ -5,12 +5,12 @@ public class SpriteBehavior : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
 
-    private void Start()
+    private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void ChangeSprite (ColorID obj)
+    public void ChangeRendererColor(ColorID obj)
     {
         spriteRenderer.color = obj.value;
     }

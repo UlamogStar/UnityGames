@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7353428063310668726}
   - component: {fileID: -3477161925906736097}
   - component: {fileID: -5909854405256368041}
+  - component: {fileID: 7963410386168800233}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -119,7 +120,7 @@ Rigidbody:
   m_GameObject: {fileID: 7080672959331912832}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 3
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6630260e59b0543a674e1c92fb9692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 5
+  seconds: 2
 --- !u!114 &-3477161925906736097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,3 +196,20 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7963410386168800233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080672959331912832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d11c938a9afa94bbc0e4f6436afdc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: c8af47955c3bd7c4ca9419cb08598104, type: 2}

@@ -300,7 +300,7 @@ MonoBehaviour:
         m_CallState: 2
   counterNum: {fileID: 0}
   canRun: 0
-  seconds: 2
+  seconds: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
