@@ -1,8 +1,7 @@
 using UnityEngine;
 //using UnityEngine.Events;
 
-[CreateAssetMenu]
-
+[CreateAssetMenu(fileName = "IntData", menuName = "ScriptableObjects/IntData", order = 2)]
 public class IntData: ScriptableObject
 {
     public int value;
