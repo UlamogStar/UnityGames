@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 5132308376901459565}
   - component: {fileID: 9021628902861504543}
   - component: {fileID: -6929918164716741297}
-  - component: {fileID: 7353428063310668726}
   - component: {fileID: -3477161925906736097}
+  - component: {fileID: 7353428063310668726}
   - component: {fileID: -5909854405256368041}
   - component: {fileID: 7963410386168800233}
-  m_Layer: 0
+  - component: {fileID: 6085650748464141896}
+  m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,19 +139,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7353428063310668726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7080672959331912832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf6630260e59b0543a674e1c92fb9692, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seconds: 2
 --- !u!114 &-3477161925906736097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +151,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ce110598da6264498c43957d838a4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7353428063310668726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080672959331912832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6630260e59b0543a674e1c92fb9692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 4
 --- !u!114 &-5909854405256368041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +211,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idObj: {fileID: 0}
   startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: c8af47955c3bd7c4ca9419cb08598104, type: 2}
+--- !u!114 &6085650748464141896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080672959331912832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a3900c4ea7e624b8ee382e7cc2c32d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: c8af47955c3bd7c4ca9419cb08598104, type: 2}
