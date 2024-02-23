@@ -7,7 +7,7 @@ public class CoroutineBehavior : MonoBehaviour
     public UnityEvent startEvent, repeatCountEvent, startCountEvent, endCountEvent, repeatUntilFalseEvent;
 
     public IntData counterNum;
-    public bool canRun = true;
+    public bool canRun = false;
     public float seconds = 3.0f;
    
     private WaitForSeconds wfsobj;
@@ -56,4 +56,11 @@ public class CoroutineBehavior : MonoBehaviour
             repeatUntilFalseEvent.Invoke();
         }
     }
+
+    public bool CanRun
+    {
+        get => canRun;
+        set => canRun = value;
+    }
+
 }
