@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 [CreateAssetMenu]
 
@@ -18,9 +17,6 @@ public class ColorIDDataList : ScriptableObject
         currentColor = colorIDList[num];
     }
 
-    public void SetColorID()
-    {
-        currentColor = colorIDList[num];
-    }
 
 }
+
