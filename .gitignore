@@ -152,3 +152,7 @@ Snake_Shuffle/Library/Artifacts/
 Snake_Shuffle/Library/PackageCache/
 
 Snake_Shuffle/Library/Bee/
+
+*.log
+
+Snake_Shuffle/Logs/
