@@ -156,3 +156,9 @@ Snake_Shuffle/Library/Bee/
 *.log
 
 Snake_Shuffle/Logs/
+
+Snake_Shuffle/Assets/TextMesh Pro/Documentation/
+
+Snake_Shuffle/Library/ShaderCache/
+
+Snake_Shuffle/Assets/TextMesh Pro/
