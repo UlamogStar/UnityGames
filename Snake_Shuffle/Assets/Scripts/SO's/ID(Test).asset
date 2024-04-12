@@ -9,11 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1229b8adca54b469e8abf19190377d, type: 3}
-  m_Name: CardIDList
+  m_Script: {fileID: 11500000, guid: 9b4f7186c491a6c418c2d12fe90f1633, type: 3}
+  m_Name: ID(Test)
   m_EditorClassIdentifier: 
-  colorIDList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  currentColor: {fileID: 11400000, guid: 07a5243874ad435469ed58e872826efd, type: 2}
