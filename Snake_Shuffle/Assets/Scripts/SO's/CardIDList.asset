@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1229b8adca54b469e8abf19190377d, type: 3}
   m_Name: CardIDList
   m_EditorClassIdentifier: 
-  colorIDList: []
-  currentColor: {fileID: 0}
+  colorIDList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentColor: {fileID: 11400000, guid: 07a5243874ad435469ed58e872826efd, type: 2}
