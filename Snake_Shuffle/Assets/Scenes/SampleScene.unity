@@ -1006,6 +1006,7 @@ GameObject:
   - component: {fileID: 649211508}
   - component: {fileID: 649211507}
   - component: {fileID: 649211510}
+  - component: {fileID: 649211511}
   m_Layer: 5
   m_Name: CardSlot_Player(2)
   m_TagString: Untagged
@@ -1020,17 +1021,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649211505}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.2648097, w: 0.9643007}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6230607, y: 4.6826, z: 1}
+  m_LocalScale: {x: 2.0975118, y: 29.471348, z: 6.2938}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 713895036}
   m_Father: {fileID: 1212956546}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30.711}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.6109962, y: -151}
+  m_AnchoredPosition: {x: -310, y: -208}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649211507
@@ -1078,6 +1079,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 740395d49e0033641ae87a56639911f7, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: b73ab0d7c5a058444bde54e042aa121e, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -1165,6 +1178,34 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: onHover(2)
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &649211511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649211505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5bad8d24cd4d7840ac3190b539d3451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: b73ab0d7c5a058444bde54e042aa121e, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1212956547}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: onPlay(2)
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &675254366
@@ -3030,6 +3071,8 @@ GameObject:
   - component: {fileID: 1559545536}
   - component: {fileID: 1559545539}
   - component: {fileID: 1559545540}
+  - component: {fileID: 1559545541}
+  - component: {fileID: 1559545542}
   m_Layer: 5
   m_Name: CardSlot_Player(1)
   m_TagString: Untagged
@@ -3046,7 +3089,7 @@ RectTransform:
   m_GameObject: {fileID: 1559545534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6230607, y: 4.6826, z: 1}
+  m_LocalScale: {x: 2.0575325, y: 29.483711, z: 2.7548304}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1902349027}
@@ -3054,7 +3097,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -127.899994, y: -150}
+  m_AnchoredPosition: {x: -534, y: -150}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559545536
@@ -3102,6 +3145,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: afabb9d2e4abb3a4b9528bce45898ef1, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 90cf857f2a163a74da2981498dd28dbd, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -3201,6 +3256,51 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: onHover
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1559545541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559545534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336624bae14b16a4aa9186a2b6c8fded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardIDs:
+  - {fileID: 11400000, guid: 290184323a1b2984a9c9c9c66f9cc79f, type: 2}
+  - {fileID: 11400000, guid: b1235163d19d54a4cbe6be11f21c9a74, type: 2}
+  - {fileID: 11400000, guid: e92f39875e1aa984b929900de70a5447, type: 2}
+  randomCardID: {fileID: 11400000, guid: e713814dc76b67e4285b65066e8e4716, type: 2}
+--- !u!114 &1559545542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559545534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5bad8d24cd4d7840ac3190b539d3451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 90cf857f2a163a74da2981498dd28dbd, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1212956547}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: onPlay
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1681542276
@@ -3581,6 +3681,7 @@ GameObject:
   - component: {fileID: 2096773131}
   - component: {fileID: 2096773130}
   - component: {fileID: 2096773133}
+  - component: {fileID: 2096773134}
   m_Layer: 5
   m_Name: CardSlot_Player(3)
   m_TagString: Untagged
@@ -3595,17 +3696,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096773128}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6230607, y: 4.6826, z: 1}
+  m_LocalRotation: {x: -0.06768459, y: -0.0023982574, z: -0.46834692, w: 0.8809451}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalScale: {x: 1.9144036, y: 30.084423, z: 5.4355}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2121612900}
   m_Father: {fileID: 1212956546}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -6.979, y: 3.418, z: -56.202}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: -152}
+  m_AnchoredPosition: {x: -119, y: -443}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2096773130
@@ -3653,6 +3754,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 42e12e1605511234186971abc6f1de93, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: ab9fcec247f511b4d83e65a0187e5700, type: 2}
         m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -3740,6 +3853,34 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: onHover(3)
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2096773134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096773128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5bad8d24cd4d7840ac3190b539d3451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: ab9fcec247f511b4d83e65a0187e5700, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1212956547}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: onPlay(3)
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &2117497238

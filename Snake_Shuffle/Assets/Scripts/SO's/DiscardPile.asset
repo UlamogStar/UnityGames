@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1229b8adca54b469e8abf19190377d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a546e503b0230640a22cad77b3b527f, type: 3}
   m_Name: DiscardPile
   m_EditorClassIdentifier: 
-  colorIDList: []
-  currentColor: {fileID: 0}
+  idDataList:
+  - {fileID: 0}
+  IDData: {fileID: 0}
+  IDDataListObj: {fileID: 11400000, guid: 9e8cc6b31dd0fdf48816f27645bda5ce, type: 2}
