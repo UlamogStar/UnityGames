@@ -1,31 +1,31 @@
 using UnityEngine;
-    public class IDCompareBehavior : MonoBehaviour
+using UnityEngine.Events;
+
+public class IDCompareBehavior : MonoBehaviour
+{
+    public ID idData;
+    public IDDataList idDataList;
+
+    public UnityEvent compareEvent_1,compareEvent_2,compareEvent_3;
+
+    public void onClickBehavior()
     {
-        public void CompareID(int idToCompare)
-            {
-                int[] idList = { /* populate your IDList here */ };
-
-                // Compare the given ID against the IDList
-                bool found = false;
-                foreach (int id in idList)
-                {
-                    if (id == idToCompare)
-                    {
-                        found = true;
-                        break;
-                    }
-                }
-
-                if (found)
-                {
-                    Debug.Log("ID found in the IDList");
-                }
-                else
-                {
-                    Debug.Log("ID not found in the IDList");
-                }
-            }
+        if (idData == idDataList.idDataList[0])
+        {
+            compareEvent_1.Invoke();
+        }
+        else if (idData == idDataList.idDataList[1])
+        {
+            compareEvent_2.Invoke();
+        }
+        else if (idData == idDataList.idDataList[2])
+        {
+            compareEvent_3.Invoke();
+        }
     }
+
+        
+}
 
 
 
