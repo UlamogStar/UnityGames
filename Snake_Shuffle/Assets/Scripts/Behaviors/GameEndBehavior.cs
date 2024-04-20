@@ -7,11 +7,14 @@ public class GameEndBehavior : MonoBehaviour
    private void OnTriggerEnter(Collider other)
    {
        gameEndEvent.Invoke();
+       gameEnd();
    }
 
-   private void GameEnd()
+   private void gameEnd()
    {
-        Time.timeScale = 0;
+     Time.timeScale = 0;
       
     }   
+   
+    
 }
