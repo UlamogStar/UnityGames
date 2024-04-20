@@ -5,6 +5,8 @@ public class IDCompareBehavior : MonoBehaviour
 {
     public ID idData;
     public IDDataList idDataList;
+    
+    public GameAction gameActionObj;
 
     public UnityEvent compareEvent_1,compareEvent_2,compareEvent_3;
 
