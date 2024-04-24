@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84edb71405bde44bb3d7573ee9a7ec4, type: 3}
+  m_Name: PlayCardList
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 90cf857f2a163a74da2981498dd28dbd, type: 2}
+  gameActionList:
+  - {fileID: 11400000, guid: 90cf857f2a163a74da2981498dd28dbd, type: 2}
+  - {fileID: 11400000, guid: b73ab0d7c5a058444bde54e042aa121e, type: 2}
+  - {fileID: 11400000, guid: ab9fcec247f511b4d83e65a0187e5700, type: 2}
