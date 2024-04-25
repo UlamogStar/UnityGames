@@ -3,5 +3,5 @@ using UnityEngine;
 
 public class ID : ScriptableObject
 {
-   
+   public int idValue;
 }
