@@ -42,4 +42,15 @@ public class TextLabelBehavior : MonoBehaviour
             tmpLabel.text = obj.value.ToString(CultureInfo.InvariantCulture); 
         }
     }
+    public void UpdateLabel(StringData obj)
+    {
+        if (label != null)
+        {
+            label.text = obj.value;
+        }
+        else
+        {
+            tmpLabel.text = obj.value; 
+        }
+    }
 }

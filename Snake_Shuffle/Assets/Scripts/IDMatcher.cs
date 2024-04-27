@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class IDMatcher : MonoBehaviour
 {
     public IDDataList idDataList; // Reference to your IDDataList ScriptableObject
-    public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
+    public UnityEvent drawEvent, matchEvent, lossEvent;
 
     public ID idValue;
 
@@ -24,7 +24,7 @@ public class IDMatcher : MonoBehaviour
 
     public void MatchIDs(ID otherID)
     {
-        ID idObj = GetComponent<IDContainerBehavior>().idObj;
+        ID idObj = idValue; // Use the idValue field directly
 
         if (idObj == null || otherID == null)
         {
@@ -35,19 +35,19 @@ public class IDMatcher : MonoBehaviour
         if (idObj == otherID)
         {
             Debug.Log("Draw: Same IDs.");
-            noMatchEvent.Invoke();
+            drawEvent.Invoke();
         }
         else if ((idObj.idValue == 1 && otherID.idValue == 3) || // Rock > Scissors
                  (idObj.idValue == 2 && otherID.idValue == 1) || // Paper > Rock
                  (idObj.idValue == 3 && otherID.idValue == 2))   // Scissors > Paper
         {
-            Debug.Log("Victory: Opposite IDs.");
+            Debug.Log("Match: Opposite IDs.");
             matchEvent.Invoke();
         }
         else
         {
             Debug.Log("Loss: Not opposite but not equal IDs.");
-            noMatchDelayedEvent.Invoke();
+            lossEvent.Invoke();
         }
     }
 }

@@ -16,5 +16,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3089302d882b0984f9330a36ad82bb1c, type: 2}
   - {fileID: 11400000, guid: 3253017ca125f9642b4cc588e10ef4c4, type: 2}
   - {fileID: 11400000, guid: 66536ca8873bb9e47b9f7d8a0652ecb5, type: 2}
+  - {fileID: 11400000, guid: 3089302d882b0984f9330a36ad82bb1c, type: 2}
   IDData: {fileID: 0}
-  IDDataListObj: {fileID: 0}
+  IDDataListObj: {fileID: 11400000}
