@@ -9,7 +9,7 @@ public class GameEndBehavior : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (intData != null && intData.value == minValue)
+        if (intData != null && intData.value <= minValue)
         {
             gameEndEvent.Invoke();
             gameEnd();

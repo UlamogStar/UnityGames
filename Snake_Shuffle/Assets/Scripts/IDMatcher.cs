@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class IDMatcher : MonoBehaviour
 {
-    public IDDataList idDataList; // Reference to your IDDataList ScriptableObject
+    public IDDataList idDataList; 
     public UnityEvent drawEvent, matchEvent, lossEvent;
 
     public ID idValue;
@@ -24,7 +24,7 @@ public class IDMatcher : MonoBehaviour
 
     public void MatchIDs(ID otherID)
     {
-        ID idObj = idValue; // Use the idValue field directly
+        ID idObj = idValue; 
 
         if (idObj == null || otherID == null)
         {
