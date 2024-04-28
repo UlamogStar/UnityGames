@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4f7186c491a6c418c2d12fe90f1633, type: 3}
   m_Name: CardID(Paper)
   m_EditorClassIdentifier: 
+  idValue: 2
