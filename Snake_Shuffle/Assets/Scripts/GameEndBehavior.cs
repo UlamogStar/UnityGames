@@ -2,10 +2,11 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class GameEndBehavior : MonoBehaviour
-{
+{   
+    public GameAction gameEndAction;
     public UnityEvent gameEndEvent;
     public IntData intData; // Reference to your IntData ScriptableObject
-    public int minValue; // Minimum value to trigger the event
+    private int minValue = -5; // Minimum value to trigger the event
 
     public void OnTriggerEnter(Collider other)
     {
@@ -20,5 +21,6 @@ public class GameEndBehavior : MonoBehaviour
     {
         Time.timeScale = 0;
         Debug.Log("Game Over");
+        gameEndAction.Raise();
     }
 }

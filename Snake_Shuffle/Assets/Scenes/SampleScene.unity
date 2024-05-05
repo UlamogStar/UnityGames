@@ -1084,7 +1084,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8207,6 +8207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26207e1bd9d3f524886057602d732a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameEndAction: {fileID: 0}
   gameEndEvent:
     m_PersistentCalls:
       m_Calls:
@@ -8223,7 +8224,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   intData: {fileID: 11400000, guid: c06b234cf9330894fb398de1b3ab89c6, type: 2}
-  minValue: -5
 --- !u!4 &651052109
 Transform:
   m_ObjectHideFlags: 0
@@ -9154,7 +9154,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10434,7 +10434,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -17515,6 +17515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26207e1bd9d3f524886057602d732a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameEndAction: {fileID: 11400000, guid: 08e9023aa02bd9440830215ba39eb912, type: 2}
   gameEndEvent:
     m_PersistentCalls:
       m_Calls:
@@ -17531,7 +17532,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 1
   intData: {fileID: 11400000, guid: c06b234cf9330894fb398de1b3ab89c6, type: 2}
-  minValue: -5
 --- !u!114 &1450207999
 MonoBehaviour:
   m_ObjectHideFlags: 0
